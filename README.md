@@ -20,11 +20,12 @@ encoded as a set of named 'columns' with defined datatypes.
 The term relational comes from _relational algebra_, which is a set of simple
 operators that allows the combination and transformation of collections of 
 structured data. Those operators are _selection_, _projection_, _product_ 
-or _join_, _union_, and _intersection_. (If you've studied set theory these
-will be familar but it's not necessary to understand and use databases.)
+or _join_, _union_, and _intersection_. (If you've studied set theory then
+many of these will be familar but it's not necessary to understand and use 
+databases.)
 
 Database _engines_ like SQLite provide tools to map between high-level, 
-human-readable representations of structure data and bytes on disk (possibly
+human-readable representations of structured data and bytes on disk (possibly
 more than one disk or even more than one computer). They range widely in
 complexity, cost, and sophistication.
 
@@ -33,14 +34,14 @@ a particular database instance. The process of defining that structure is
 _modelling_ or _schema design_.
 
 You can get data in and out of your databases via _queries_. Most people write
-queries using a (semi-)standardized language called _Structured Query Language_
+queries using a semi-standardized language called _Structured Query Language_
 (_SQL_). Even when you're using a tool that provides an alternate front-end 
 view of your queries, odds are it's converting them to SQL behind the scenes.
 
 ## Getting Started ##
 
 As we previously mentioned, the SQLite database tool is already installed on
-OS X and most Linux systems. If you are running Winddows you can download a 
+OS X and most Linux systems. If you are running Windows you can download a 
 copy from the [download page](http://sqlite.org/download.html) or use a 
 [web-based demo console](http://kripken.github.io/sql.js/GUI/).
 
