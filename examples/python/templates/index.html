@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>msg: micro sql group</title>
+  </head>
+  <body>
+    <ul id="msg-list">
+      {% for msg in messages %}<li class="msg-li">
+        <span class="msg-poster">
+          ({% if msg.0 %}{{ msg.0 }}{% else %}<em>anonymous</em>{% endif %})
+        </span>
+        <span class="msg-body">{{ msg.1 }}</span>
+      </li>{% endfor %}
+    </ul>
+    <form id="msg-post" method="POST" action="/post">
+      <label for="alias">posted by:</label><br>
+      <input type="text" name="alias" size="15" placeholder="anonymous"><br>
+      <label for="body">your message:</label><br>
+      <input type="text" name="body" size="80">
+      <input type="submit" value="send">
+    </form>
+  </body>
+</html>
